@@ -36,7 +36,7 @@ DOMAIN-SUFFIX,xiami.net,DIRECT
 DOMAIN-SUFFIX,ykimg.com,DIRECT
 DOMAIN-SUFFIX,youku.com,DIRECT
 
-#google
+# google
 DOMAIN-SUFFIX,1e100.net,DIRECT
 DOMAIN-SUFFIX,2mdn.net,DIRECT
 DOMAIN-SUFFIX,app-measurement.net,DIRECT
