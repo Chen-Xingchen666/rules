@@ -1,0 +1,21 @@
+/*******************************
+wwyd 解锁VIP
+*******************************
+[rewrite_local]
+^https:\/\/api\.sortedapp\.com\/receipts url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/sorte.js
+[mitm] 
+hostname = api.sortedapp.com
+*******************************/
+
+var body = $response.body;
+var url = $request.url;
+var obj = JSON.parse(body);
+
+const vip = '/verify';
+
+
+if (url.indexOf(vip) != -1) {
+    obj.isPro = true;
+	body = JSON.stringify(obj);
+}
+$done({body});
